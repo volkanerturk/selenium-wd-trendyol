@@ -2,19 +2,12 @@
 const webdriver = require('selenium-webdriver');
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 const driver = new webdriver.Builder().forBrowser('chrome').usingServer('http://localhost:4444/wd/hub').build();
-/Page Object Model Örneği/
-var emailInput = 'email'
-var passwordInput = 'pass'
-var loginBtn = '//button'
-// Fonksiyon Örneği - Callback fonksiyon//
-var sendEmailFunction = (email) => driver.findElement(By.id(emailInput)).sendKeys(email)
-// Assertion
 
 describe('Trendyol test', function () {
     it("Hedef URL 'ye girilir", async () => {
         await driver.get('http://www.trendyol.com')
     })
-    it("Hedef ürün aratılır.", async () => {
+    it("Hedef ürün aratılır. En uygun fiyatlısı bulunur. Sepete eklenir.", async () => {
         var hedefUrun = "Iphone 14 Kılıf"
         var filtre = "En düşük fiyat"
         await driver.sleep(1500)
