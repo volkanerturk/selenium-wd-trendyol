@@ -4,7 +4,7 @@
   "description": "Bu projede trendyol sitesinde window handle yani yeni bir sekme açıldığında teste devam etme ve ekranda çıkan popupları egale ederek test senaryolarının devamını sağlayan bir örnek hazırladım.",
   "main": "trendyol.js",
   "scripts": {
-    "test": "mocha ./trendyol --timeout=120000000"
+    "test": "mocha ./trendyol --timeout=120000001"
   },
   "repository": {
     "type": "git",
