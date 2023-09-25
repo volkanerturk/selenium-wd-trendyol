@@ -1,0 +1,24 @@
+{
+  "name": "selenium-wd-trendyol",
+  "version": "1.0.0",
+  "description": "Bu projede trendyol sitesinde window handle yani yeni bir sekme açıldığında teste devam etme ve ekranda çıkan popupları egale ederek test senaryolarının devamını sağlayan bir örnek hazırladım.",
+  "main": "trendyol.js",
+  "scripts": {
+    "test": "mocha ./trendyol --timeout=120000000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yigitkiris366/selenium-wd-trendyol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.0.0",
+    "selenium-webdriver": "^4.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/yigitkiris366/selenium-wd-trendyol/issues"
+  },
+  "homepage": "https://github.com/yigitkiris366/selenium-wd-trendyol#readme"
+}
